@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rizky.rizkycherthioannisyah_1202154300__modul1.MainActivity">
+
+    <TextView
+        android:id="@+id/makanMalam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Makan Malam"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/Tempat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makanMalam"
+        android:layout_centerHorizontal="true"
+        android:text="dengan Milea" />
+
+    <EditText
+        android:id="@+id/namaMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Jumlah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namaMakanan"
+        android:layout_alignStart="@+id/namaMakanan"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/eatBus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Jumlah"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/Tempat"
+        android:layout_toStartOf="@+id/Tempat"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:onClick="keEatbus"
+        android:text="Eatbus" />
+
+    <Button
+        android:id="@+id/abNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eatBus"
+        android:layout_alignBottom="@+id/eatBus"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_toEndOf="@+id/eatBus"
+        android:layout_toRightOf="@+id/eatBus"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:onClick="keAbnormal"
+        android:text="Abnormal" />
+</RelativeLayout>
